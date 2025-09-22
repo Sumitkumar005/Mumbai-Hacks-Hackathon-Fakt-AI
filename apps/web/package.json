@@ -8,7 +8,7 @@
     "clean": "rm -rf .next node_modules && rm -f pnpm-lock.yaml bun.lockb yarn.lock package-lock.json",
     "lint": "ultracite lint",
     "format": "ultracite format",
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "fmc": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "fmw": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "next start",

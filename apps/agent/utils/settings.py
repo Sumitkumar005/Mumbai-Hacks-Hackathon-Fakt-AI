@@ -6,9 +6,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 def _validate_openai_api_key(v: str | None) -> str | None:
-    """Validate that the OpenAI API key starts with 'sk-proj-'."""
-    if v and not v.startswith("sk-proj-"):
-        raise ValueError("OpenAI API key must start with 'sk-proj-'")
+    """Validate that the OpenAI API key starts with 'sk-'."""
+    if v and not v.startswith("sk-"):
+        raise ValueError("OpenAI API key must start with 'sk-'")
     return v
 
 
